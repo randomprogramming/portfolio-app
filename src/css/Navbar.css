@@ -1,0 +1,18 @@
+.navbar-main-flex {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	background-color: #dfcdc3;
+}
+
+.navbar-logo {
+	flex: 1;
+}
+
+.navbar-buttons-container {
+	flex: 2;
+}
+
+ul {
+	list-style-type: none;
+}
