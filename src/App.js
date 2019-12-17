@@ -10,6 +10,8 @@ import { Navbar } from "./components/Navbar";
 export default class App extends Component {
 	render() {
 		return (
+			// This is the router which renders the correct component depending
+			// on the current url. The user can click on any of the Links in the Navbar
 			<Router>
 				<Navbar />
 				<Switch>

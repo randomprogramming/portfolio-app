@@ -9,22 +9,22 @@ export const Navbar = () => {
 			<div className="navbar-logo">Logo here</div>
 			<div className="navbar-buttons-container">
 				<ul className="navbar-menu-list">
-					<li>
+					<li id="navbar-home-li">
 						<Link className="navbar-a" to="/">
 							Home
 						</Link>
 					</li>
-					<li>
+					<li id="navbar-about-li">
 						<Link className="navbar-a" to="/about">
 							About me
 						</Link>
 					</li>
-					<li>
+					<li id="navbar-projects-li">
 						<Link className="navbar-a" to="/projects">
 							Projects
 						</Link>
 					</li>
-					<li>
+					<li id="navbar-contact-li">
 						<Link className="navbar-a" to="/contact">
 							Contact
 						</Link>
