@@ -10,10 +10,18 @@
 
 .navbar-logo {
 	flex: 1;
+	margin-left: 5rem;
+	align-self: center;
+	text-transform: uppercase;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: larger;
+	font-weight: bold;
+	color: black;
 }
 
 .navbar-buttons-container {
 	flex: 2;
+	align-self: center;
 }
 
 ul {
@@ -23,7 +31,6 @@ ul {
 
 li {
 	display: inline-block;
-	margin-right: 4rem;
 }
 
 .navbar-a {
@@ -31,4 +38,5 @@ li {
 	font-size: 20px;
 	font-family: Arial, Helvetica, sans-serif;
 	color: #015668;
+	margin-right: 4rem;
 }

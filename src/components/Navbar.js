@@ -7,7 +7,7 @@ export default class Navbar extends Component {
 	render() {
 		return (
 			<div className="navbar-main-flex">
-				<div className="navbar-logo">Logo here</div>
+				<div className="navbar-logo">randomprogramming</div>
 				<div className="navbar-buttons-container">
 					<ul className="navbar-menu-list">
 						<li id="navbar-home-li">
@@ -39,5 +39,4 @@ export default class Navbar extends Component {
 
 const active = {
 	textDecoration: "underline",
-	fontWeight: "700",
 };
