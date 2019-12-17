@@ -5,7 +5,7 @@ import Home from "./views/Home";
 import AboutMe from "./views/AboutMe";
 import Projects from "./views/Projects";
 import Contact from "./views/Contact";
-import { Navbar } from "./components/Navbar";
+import Navbar from "./components/Navbar";
 
 export default class App extends Component {
 	render() {
