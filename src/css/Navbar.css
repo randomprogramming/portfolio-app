@@ -3,6 +3,8 @@
 	flex-direction: row;
 	width: 100%;
 	background-color: #dfcdc3;
+	position: sticky;
+	height: 4rem;
 }
 
 .navbar-logo {
@@ -15,4 +17,16 @@
 
 ul {
 	list-style-type: none;
+	float: right;
+}
+
+li {
+	display: inline-block;
+	margin-right: 4rem;
+}
+
+.navbar-a {
+	text-decoration: none;
+	font-size: 20px;
+	font-family: Arial, Helvetica, sans-serif;
 }

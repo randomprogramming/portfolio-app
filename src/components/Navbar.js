@@ -8,18 +8,26 @@ export const Navbar = () => {
 		<div className="navbar-main-flex">
 			<div className="navbar-logo">Logo here</div>
 			<div className="navbar-buttons-container">
-				<ul>
+				<ul className="navbar-menu-list">
 					<li>
-						<Link to="/">Home</Link>
+						<Link className="navbar-a" to="/">
+							Home
+						</Link>
 					</li>
 					<li>
-						<Link to="/about">About me</Link>
+						<Link className="navbar-a" to="/about">
+							About me
+						</Link>
 					</li>
 					<li>
-						<Link to="/projects">Projects</Link>
+						<Link className="navbar-a" to="/projects">
+							Projects
+						</Link>
 					</li>
 					<li>
-						<Link to="/contact">Contact</Link>
+						<Link className="navbar-a" to="/contact">
+							Contact
+						</Link>
 					</li>
 				</ul>
 			</div>
