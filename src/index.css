@@ -7,10 +7,15 @@ body {
 	margin: 0px;
 	padding: 0px;
 	/* Set the background color of the website here */
-	background-color: #263f44;
+	background-color: #18162b;
 }
 
 @font-face {
 	font-family: "Raleway Regular";
 	src: local("Raleway Regular"), url(./fonts/Raleway-Regular.ttf);
+}
+
+@font-face {
+	font-family: "Relaway Bold";
+	src: local("Raleway Bold"), url(./fonts/Raleway-Bold.ttf);
 }
