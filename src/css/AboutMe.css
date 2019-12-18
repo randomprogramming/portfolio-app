@@ -1,0 +1,17 @@
+.links-container {
+	margin: 20vh 15vw 0vh 15vw;
+	display: flex;
+	flex-direction: column;
+}
+
+.link-img {
+	height: 3rem;
+	width: 3rem;
+	border: solid 3px;
+	padding: 15px;
+	border-radius: 25px;
+}
+
+.link-name {
+	align-self: flex-end;
+}
