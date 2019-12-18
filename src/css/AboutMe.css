@@ -1,5 +1,5 @@
 .links-container {
-	margin: 20vh 15vw 0vh 15vw;
+	margin: 20vh 25vw 0vh 25vw;
 	display: flex;
 	flex-direction: column;
 }
@@ -12,6 +12,10 @@
 	border-radius: 25px;
 }
 
-.link-name {
+.align-end {
 	align-self: flex-end;
+}
+
+span {
+	font-size: 32px;
 }

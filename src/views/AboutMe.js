@@ -13,14 +13,14 @@ export default class AboutMe extends Component {
 			// TODO: Rewrite this and turn a link into a component to reduce the repetitive code
 			<div className="about-me-container">
 				<div className="links-container">
-					<div className="link-name">
+					<div className="link-name align-end">
+						<span className="link-name-text">{links.name.text}</span>
 						<img
 							className="link-name-img link-img"
 							src={links.name.icon}
 							alt="name"
 							style={{ borderColor: "#FD003A" }}
 						/>
-						<span className="link-name-text">{links.name.text}</span>
 					</div>
 
 					<div className="link-location">
@@ -30,17 +30,18 @@ export default class AboutMe extends Component {
 							alt="location"
 							style={{ borderColor: "#1689FC" }}
 						/>
+
 						<span className="link-location-text">{links.location.text}</span>
 					</div>
 
-					<div className="link-email">
+					<div className="link-email align-end">
+						<span className="link-email-text">{links.email.text}</span>
 						<img
 							className="link-email-img link-img"
 							src={links.email.icon}
 							alt="email"
 							style={{ borderColor: "#FD003A" }}
 						/>
-						<span className="link-email-text">{links.email.text}</span>
 					</div>
 
 					<div className="link-phone">
@@ -53,14 +54,14 @@ export default class AboutMe extends Component {
 						<span className="link-phone-text">{links.phone.text}</span>
 					</div>
 
-					<div className="link-github">
+					<div className="link-github align-end">
+						<span className="link-github-text">{links.github.text}</span>
 						<img
 							className="link-github-img link-img"
 							src={links.github.icon}
 							alt="github"
 							style={{ borderColor: "#FD003A" }}
 						/>
-						<span className="link-github-text">{links.github.text}</span>
 					</div>
 				</div>
 			</div>
