@@ -9,3 +9,8 @@ body {
 	/* Set the background color of the website here */
 	background-color: #263f44;
 }
+
+@font-face {
+	font-family: "Raleway Regular";
+	src: local("Raleway Regular"), url(./fonts/Raleway-Regular.ttf);
+}
