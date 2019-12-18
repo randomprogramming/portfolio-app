@@ -18,7 +18,7 @@
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: larger;
 	font-weight: bold;
-	color: black;
+	color: #083e49;
 }
 
 .navbar-buttons-container {
@@ -39,6 +39,6 @@ li {
 	text-decoration: none;
 	font-size: 20px;
 	font-family: Arial, Helvetica, sans-serif;
-	color: #015668;
+	color: #083e49;
 	margin-right: 4rem;
 }
