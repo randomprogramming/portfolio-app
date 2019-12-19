@@ -69,7 +69,19 @@ export default class AboutMe extends Component {
 					</div>
 				</div>
 
-				<div className="about-me-text-container">Hell oworld</div>
+				<p className="about-me-text-container">
+					I am a 19 year old student currently studying Computing at the{" "}
+					<a href="https://tvz.hr">Zagreb University of Applied Sciences</a>. My passion for
+					programming began in 2nd grade of high school, where we started learning about C. A couple
+					of years have passed since then, and today I consider myself a full-stack developer. I
+					love learning new things, so I am always trying to either learn something completely new,
+					or improve my knowledge about certain languages, frameworks and other technologies. I
+					currently have experience working in the following technologies:{" "}
+					<ul style={{ display: "inline-grid", padding: "0px", margin: "0px" }}>
+						<li>this</li>
+						<li>that</li>
+					</ul>
+				</p>
 
 				<div className="footer">
 					<p>

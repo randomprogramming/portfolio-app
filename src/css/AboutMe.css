@@ -29,6 +29,8 @@
 
 .about-me-text-container {
 	margin: 5vh 20vw 5vh 20vw;
+	text-indent: 3em;
+	font-size: 24px;
 }
 
 .footer {

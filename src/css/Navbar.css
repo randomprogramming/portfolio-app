@@ -26,12 +26,12 @@
 	align-self: center;
 }
 
-ul {
+.navbar-menu-list {
 	list-style-type: none;
 	float: right;
 }
 
-li {
+.navbar-link-container {
 	display: inline-block;
 }
 
