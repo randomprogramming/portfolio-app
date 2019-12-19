@@ -16,6 +16,12 @@
 	align-self: flex-end;
 }
 
-span {
+.link {
+	display: inline-flex;
+}
+
+.link-text {
+	align-self: center;
 	font-size: 32px;
+	margin: 0em 1em;
 }
