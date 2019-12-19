@@ -6,6 +6,14 @@ import Location from "../images/location.png";
 import Email from "../images/email.png";
 import Phone from "../images/phone.png";
 import Github from "../images/github.png";
+import Java from "../images/technologies/java.png";
+import Spring from "../images/technologies/spring.png";
+import Javascript from "../images/technologies/javascript.png";
+import Html from "../images/technologies/html.png";
+import Css from "../images/technologies/css.png";
+import ReactImg from "../images/technologies/react.png";
+import Clang from "../images/technologies/clang.png";
+import Git from "../images/technologies/git.png";
 
 export default class AboutMe extends Component {
 	render() {
@@ -77,9 +85,40 @@ export default class AboutMe extends Component {
 					love learning new things, so I am always trying to either learn something completely new,
 					or improve my knowledge about certain languages, frameworks and other technologies. I
 					currently have experience working in the following technologies:{" "}
-					<ul style={{ display: "inline-grid", padding: "0px", margin: "0px" }}>
-						<li>this</li>
-						<li>that</li>
+					<ul className="about-me-technologies-list">
+						{/* TODO: Turn this into its own Component which takes in the text and the image and makes a list from them */}
+						<li className="technologies-list-item">
+							{technologies.java.text}{" "}
+							<img src={technologies.java.icon} alt="Java" className="list-img" />
+						</li>
+						<li className="technologies-list-item">
+							{technologies.spring.text}{" "}
+							<img src={technologies.spring.icon} alt="Spring" className="list-img" />
+						</li>
+						<li className="technologies-list-item">
+							{technologies.javascript.text}{" "}
+							<img src={technologies.javascript.icon} alt="Javascript" className="list-img" />
+						</li>
+						<li className="technologies-list-item">
+							{technologies.html.text}{" "}
+							<img src={technologies.html.icon} alt="HTML" className="list-img" />
+						</li>
+						<li className="technologies-list-item">
+							{technologies.css.text}{" "}
+							<img src={technologies.css.icon} alt="CSS" className="list-img" />
+						</li>
+						<li className="technologies-list-item">
+							{technologies.react.text}{" "}
+							<img src={technologies.react.icon} alt="React" className="list-img" />
+						</li>
+						<li className="technologies-list-item">
+							{technologies.clang.text}{" "}
+							<img src={technologies.clang.icon} alt="C" className="list-img" />
+						</li>
+						<li className="technologies-list-item">
+							{technologies.git.text}{" "}
+							<img src={technologies.git.icon} alt="Git" className="list-img" />
+						</li>
 					</ul>
 				</p>
 
@@ -121,5 +160,40 @@ const links = {
 	github: {
 		icon: Github,
 		text: "github.com/randomprogramming",
+	},
+};
+
+const technologies = {
+	java: {
+		icon: Java,
+		text: "Java",
+	},
+	spring: {
+		icon: Spring,
+		text: "Spring",
+	},
+	javascript: {
+		icon: Javascript,
+		text: "JavaScript",
+	},
+	html: {
+		icon: Html,
+		text: "HTML",
+	},
+	css: {
+		icon: Css,
+		text: "CSS",
+	},
+	react: {
+		icon: ReactImg,
+		text: "React",
+	},
+	clang: {
+		icon: Clang,
+		text: "C",
+	},
+	git: {
+		icon: Git,
+		text: "Git",
 	},
 };
