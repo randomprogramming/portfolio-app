@@ -68,6 +68,22 @@ export default class AboutMe extends Component {
 						/>
 					</div>
 				</div>
+
+				<div className="about-me-text-container">Hell oworld</div>
+
+				<div className="footer">
+					<p>
+						Big thanks to{" "}
+						<a href="https://www.flaticon.com/authors/freepik" title="Freepik">
+							Freepik
+						</a>{" "}
+						from{" "}
+						<a href="https://www.flaticon.com/" title="Flaticon">
+							www.flaticon.com
+						</a>{" "}
+						for making these awesome icons!
+					</p>
+				</div>
 			</div>
 		);
 	}

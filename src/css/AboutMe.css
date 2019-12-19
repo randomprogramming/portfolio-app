@@ -1,5 +1,5 @@
 .links-container {
-	margin: 20vh 20vw 0vh 20vw;
+	margin: 15vh 20vw 0vh 20vw;
 	display: flex;
 	flex-direction: column;
 }
@@ -22,6 +22,16 @@
 
 .link-text {
 	align-self: center;
-	font-size: 32px;
-	margin: 0em 1em;
+	font-size: 36px;
+	margin: 0em 0.5em;
+	font-weight: bold;
+}
+
+.about-me-text-container {
+	margin: 5vh 20vw 5vh 20vw;
+}
+
+.footer {
+	text-align: center;
+	font-size: 12px;
 }
