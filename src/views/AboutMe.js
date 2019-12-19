@@ -55,7 +55,11 @@ export default class AboutMe extends Component {
 					</div>
 
 					<div className="link-github align-end">
-						<span className="link-github-text">{links.github.text}</span>
+						<span className="link-github-text">
+							<a href="https://github.com/randomprogramming" style={{ color: "white" }}>
+								{links.github.text}
+							</a>
+						</span>
 						<img
 							className="link-github-img link-img"
 							src={links.github.icon}
