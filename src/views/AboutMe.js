@@ -84,7 +84,7 @@ export default class AboutMe extends Component {
 					of years have passed since then, and today I consider myself a full-stack developer. I
 					love learning new things, so I am always trying to either learn something completely new,
 					or improve my knowledge about certain languages, frameworks and other technologies. I
-					currently have experience working in the following technologies:{" "}
+					currently have experience working with the following technologies:{" "}
 					<ul className="about-me-technologies-list">
 						{/* TODO: Turn this into its own Component which takes in the text and the image and makes a list from them */}
 						<li className="technologies-list-item">

@@ -42,3 +42,7 @@
 	color: #18162b;
 	margin-right: 4rem;
 }
+
+.navbar-a:hover {
+	text-decoration: underline;
+}
