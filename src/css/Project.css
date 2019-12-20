@@ -1,0 +1,23 @@
+.project-title {
+	padding: 0;
+	margin: 0;
+}
+
+.project-container {
+	display: inline-flex;
+}
+
+.image-container {
+	height: 15rem;
+	border: solid 5px;
+	margin-right: 3vw;
+}
+
+.text-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.project-description-text {
+	font-size: 20px;
+}

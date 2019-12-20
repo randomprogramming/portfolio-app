@@ -2,6 +2,7 @@ import React, { Component } from "react";
 
 import "../css/Projects.css";
 import Project from "../components/Project";
+import WeatherApp from "../images/projects/weather-app.png";
 
 export default class Projects extends Component {
 	render() {
@@ -26,11 +27,10 @@ const listOfProjects = [
 	{
 		name: "Weather app",
 		description:
-			"This little weather app was built on top of the OpenWeatherMap API. You" +
-			"can search for cities and see the current weather in the selected city." +
-			"It was built using React and standard JavaScript. It was a very fun project, but unfortunately " +
-			"I wasn't able to fully finish it since some of the API features are hidden behind a paywall.",
+			"This little weather app was built on top of the OpenWeatherMap API. You " +
+			"can search for cities and see the current weather in the selected city. " +
+			"It was built using React and standard JavaScript. ",
 		link: "https://github.com/randomprogramming/weather-app",
-		image: "f",
+		image: WeatherApp,
 	},
 ];
