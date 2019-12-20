@@ -19,7 +19,6 @@ import Links from "../components/Links";
 export default class AboutMe extends Component {
 	render() {
 		return (
-			// TODO: Rewrite this and turn a link into a component to reduce the repetitive code
 			<div className="about-me-container">
 				<div className="links-container">
 					{/* For each link in array, create a Links Component, and place every other Links to the left */}
