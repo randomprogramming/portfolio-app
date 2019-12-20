@@ -31,7 +31,7 @@ export default class AboutMe extends Component {
 						/>
 					))}
 				</div>
-				;
+
 				<p className="about-me-text-container">
 					I am a 19 year old student currently studying Computing at the{" "}
 					<a href="https://tvz.hr">Zagreb University of Applied Sciences</a>. My passion for
