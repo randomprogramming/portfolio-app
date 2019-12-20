@@ -4,17 +4,25 @@
 }
 
 .project-container {
-	display: inline-flex;
+	display: flex;
+	flex-direction: row;
 	margin-top: 5vh;
+	width: 100%;
 }
 
-.image-container {
-	height: 15rem;
+.image {
+	max-height: 15rem;
 	border: solid 5px;
 	margin-right: 3vw;
 }
+.image-container {
+	flex: 1;
+	justify-content: center;
+	text-align: center;
+}
 
 .text-container {
+	flex: 1;
 	display: flex;
 	flex-direction: column;
 }
