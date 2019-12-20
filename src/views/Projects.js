@@ -12,6 +12,7 @@ export default class Projects extends Component {
 				{listOfProjects.map(project => {
 					return (
 						<Project
+							key={project.name}
 							name={project.name}
 							description={project.description}
 							link={project.link}

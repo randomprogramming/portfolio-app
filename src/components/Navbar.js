@@ -10,22 +10,22 @@ export default class Navbar extends Component {
 				<div className="navbar-logo">randomprogramming</div>
 				<div className="navbar-buttons-container">
 					<ul className="navbar-menu-list">
-						<li class="navbar-link-container" id="navbar-home-li">
+						<li className="navbar-link-container" id="navbar-home-li">
 							<NavLink className="navbar-a" exact to="/" activeStyle={active}>
 								Home
 							</NavLink>
 						</li>
-						<li class="navbar-link-container" id="navbar-about-li">
+						<li className="navbar-link-container" id="navbar-about-li">
 							<NavLink className="navbar-a" exact to="/about" activeStyle={active}>
 								About me
 							</NavLink>
 						</li>
-						<li class="navbar-link-container" id="navbar-projects-li">
+						<li className="navbar-link-container" id="navbar-projects-li">
 							<NavLink className="navbar-a" exact to="/projects" activeStyle={active}>
 								Projects
 							</NavLink>
 						</li>
-						<li class="navbar-link-container" id="navbar-contact-li">
+						<li className="navbar-link-container" id="navbar-contact-li">
 							<NavLink className="navbar-a" exact to="/contact" activeStyle={active}>
 								Contact
 							</NavLink>

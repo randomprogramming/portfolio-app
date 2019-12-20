@@ -24,7 +24,12 @@ export default class AboutMe extends Component {
 				<div className="links-container">
 					{/* For each link in array, create a Links Component, and place every other Links to the left */}
 					{links.map((link, i) => (
-						<Links icon={link.icon} text={link.text} isRight={i % 2 === 0 ? true : false} />
+						<Links
+							key={link.text}
+							icon={link.icon}
+							text={link.text}
+							isRight={i % 2 === 0 ? true : false}
+						/>
 					))}
 				</div>
 				;
@@ -36,6 +41,7 @@ export default class AboutMe extends Component {
 					love learning new things, so I am always trying to either learn something completely new,
 					or improve my knowledge about certain languages, frameworks and other technologies. I
 					currently have experience working with the following technologies:{" "}
+					{/* TODO: Remove <ul/> from the <p/> tag, move it somewhere else, make a flexbox and use inline flex with <p/> */}
 					<ul className="about-me-technologies-list">
 						{/* TODO: Turn this into its own Component which takes in the text and the image and makes a list from them */}
 						<li className="technologies-list-item">
