@@ -27,7 +27,7 @@
 	font-weight: bold;
 }
 
-.about-me-text-container {
+.about-me-text {
 	margin: 5vh 20vw 5vh 20vw;
 	text-indent: 3em;
 	font-size: 24px;
@@ -44,9 +44,14 @@
 	display: inline-grid;
 }
 
+.technologies {
+	text-align: center;
+}
+
 .technologies-list-item {
-	margin: 0px;
+	margin: 0.5rem 0rem 0rem 0rem;
 	padding: 0px;
+	font-size: 24px;
 }
 
 .list-img {

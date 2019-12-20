@@ -15,6 +15,7 @@ import ReactImg from "../images/technologies/react.png";
 import Clang from "../images/technologies/clang.png";
 import Git from "../images/technologies/git.png";
 import Links from "../components/Links";
+import TechnologiesList from "../components/TechnologiesList";
 
 export default class AboutMe extends Component {
 	render() {
@@ -32,8 +33,8 @@ export default class AboutMe extends Component {
 					))}
 				</div>
 
-				<div>
-					<p className="about-me-text-container">
+				<div className="about-me-text-container">
+					<p className="about-me-text">
 						I am a 19 year old student currently studying Computing at the{" "}
 						<a href="https://tvz.hr">Zagreb University of Applied Sciences</a>. My passion for
 						programming began in 2nd grade of high school, where we started learning about C. A
@@ -41,43 +42,12 @@ export default class AboutMe extends Component {
 						developer. I love learning new things, so I am always trying to either learn something
 						completely new, or improve my knowledge about certain languages, frameworks and other
 						technologies. I currently have experience working with the following technologies:{" "}
-						{/* TODO: Remove <ul/> from the <p/> tag, move it somewhere else, make a flexbox and use inline flex with <p/> */}
-						<ul className="about-me-technologies-list">
-							{/* TODO: Turn this into its own Component which takes in the text and the image and makes a list from them */}
-							<li className="technologies-list-item">
-								{technologies.java.text}{" "}
-								<img src={technologies.java.icon} alt="Java" className="list-img" />
-							</li>
-							<li className="technologies-list-item">
-								{technologies.spring.text}{" "}
-								<img src={technologies.spring.icon} alt="Spring" className="list-img" />
-							</li>
-							<li className="technologies-list-item">
-								{technologies.javascript.text}{" "}
-								<img src={technologies.javascript.icon} alt="Javascript" className="list-img" />
-							</li>
-							<li className="technologies-list-item">
-								{technologies.html.text}{" "}
-								<img src={technologies.html.icon} alt="HTML" className="list-img" />
-							</li>
-							<li className="technologies-list-item">
-								{technologies.css.text}{" "}
-								<img src={technologies.css.icon} alt="CSS" className="list-img" />
-							</li>
-							<li className="technologies-list-item">
-								{technologies.react.text}{" "}
-								<img src={technologies.react.icon} alt="React" className="list-img" />
-							</li>
-							<li className="technologies-list-item">
-								{technologies.clang.text}{" "}
-								<img src={technologies.clang.icon} alt="C" className="list-img" />
-							</li>
-							<li className="technologies-list-item">
-								{technologies.git.text}{" "}
-								<img src={technologies.git.icon} alt="Git" className="list-img" />
-							</li>
-						</ul>
 					</p>
+
+					<div className="technologies">
+						{/* Tehcnologies list is a ul > li tag which creates a li for each tech in the technologies array */}
+						<TechnologiesList techs={technologies} />
+					</div>
 				</div>
 
 				<div className="footer">
@@ -121,37 +91,37 @@ const links = [
 	},
 ];
 
-const technologies = {
-	java: {
+const technologies = [
+	{
 		icon: Java,
 		text: "Java",
 	},
-	spring: {
+	{
 		icon: Spring,
 		text: "Spring",
 	},
-	javascript: {
+	{
 		icon: Javascript,
 		text: "JavaScript",
 	},
-	html: {
+	{
 		icon: Html,
 		text: "HTML",
 	},
-	css: {
+	{
 		icon: Css,
 		text: "CSS",
 	},
-	react: {
+	{
 		icon: ReactImg,
 		text: "React",
 	},
-	clang: {
+	{
 		icon: Clang,
 		text: "C",
 	},
-	git: {
+	{
 		icon: Git,
 		text: "Git",
 	},
-};
+];
