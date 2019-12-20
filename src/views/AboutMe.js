@@ -14,13 +14,14 @@ import Css from "../images/technologies/css.png";
 import ReactImg from "../images/technologies/react.png";
 import Clang from "../images/technologies/clang.png";
 import Git from "../images/technologies/git.png";
+import Links from "../components/Links";
 
 export default class AboutMe extends Component {
 	render() {
 		return (
 			// TODO: Rewrite this and turn a link into a component to reduce the repetitive code
 			<div className="about-me-container">
-				<div className="links-container">
+				{/* <div className="links-container">
 					<div className="link align-end">
 						<div className="link-text">{links.name.text}</div>
 						<img
@@ -75,8 +76,13 @@ export default class AboutMe extends Component {
 							style={{ borderColor: "#FD003A" }}
 						/>
 					</div>
+				</div> */}
+				<div className="links-container">
+					{links.map(link => (
+						<Links icon={link.icon} text={link.text} />
+					))}
 				</div>
-
+				;
 				<p className="about-me-text-container">
 					I am a 19 year old student currently studying Computing at the{" "}
 					<a href="https://tvz.hr">Zagreb University of Applied Sciences</a>. My passion for
@@ -121,7 +127,6 @@ export default class AboutMe extends Component {
 						</li>
 					</ul>
 				</p>
-
 				<div className="footer">
 					<p>
 						Big thanks to{" "}
@@ -140,28 +145,28 @@ export default class AboutMe extends Component {
 	}
 }
 
-const links = {
-	name: {
+const links = [
+	{
 		icon: Name,
 		text: "Dominik",
 	},
-	location: {
+	{
 		icon: Location,
 		text: "Croatia🇭🇷",
 	},
-	email: {
+	{
 		icon: Email,
 		text: "xxxxxxxx@tvz.hr",
 	},
-	phone: {
+	{
 		icon: Phone,
 		text: "099xxxxxxx",
 	},
-	github: {
+	{
 		icon: Github,
 		text: "github.com/randomprogramming",
 	},
-};
+];
 
 const technologies = {
 	java: {
