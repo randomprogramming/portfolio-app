@@ -21,65 +21,10 @@ export default class AboutMe extends Component {
 		return (
 			// TODO: Rewrite this and turn a link into a component to reduce the repetitive code
 			<div className="about-me-container">
-				{/* <div className="links-container">
-					<div className="link align-end">
-						<div className="link-text">{links.name.text}</div>
-						<img
-							className="link-name-img link-img"
-							src={links.name.icon}
-							alt="name"
-							style={{ borderColor: "#FD003A" }}
-						/>
-					</div>
-
-					<div className="link">
-						<img
-							className="link-location-img link-img"
-							src={links.location.icon}
-							alt="location"
-							style={{ borderColor: "#1689FC" }}
-						/>
-
-						<div className="link-text">{links.location.text}</div>
-					</div>
-
-					<div className="link align-end">
-						<div className="link-text">{links.email.text}</div>
-						<img
-							className="link-email-img link-img"
-							src={links.email.icon}
-							alt="email"
-							style={{ borderColor: "#FD003A" }}
-						/>
-					</div>
-
-					<div className="link">
-						<img
-							className="link-phone-img link-img"
-							src={links.phone.icon}
-							alt="phone"
-							style={{ borderColor: "#1689FC" }}
-						/>
-						<div className="link-text">{links.phone.text}</div>
-					</div>
-
-					<div className="link align-end">
-						<div className="link-text">
-							<a href="https://github.com/randomprogramming" style={{ color: "white" }}>
-								{links.github.text}
-							</a>
-						</div>
-						<img
-							className="link-github-img link-img"
-							src={links.github.icon}
-							alt="github"
-							style={{ borderColor: "#FD003A" }}
-						/>
-					</div>
-				</div> */}
 				<div className="links-container">
-					{links.map(link => (
-						<Links icon={link.icon} text={link.text} />
+					{/* For each link in array, create a Links Component, and place every other Links to the left */}
+					{links.map((link, i) => (
+						<Links icon={link.icon} text={link.text} isRight={i % 2 === 0 ? true : false} />
 					))}
 				</div>
 				;
