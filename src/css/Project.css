@@ -5,6 +5,7 @@
 
 .project-container {
 	display: inline-flex;
+	margin-top: 5vh;
 }
 
 .image-container {

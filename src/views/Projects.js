@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import "../css/Projects.css";
 import Project from "../components/Project";
 import WeatherApp from "../images/projects/weather-app.png";
+import PortfolioApp from "../images/projects/portfolio-app.png";
 
 export default class Projects extends Component {
 	render() {
@@ -22,7 +23,7 @@ export default class Projects extends Component {
 		);
 	}
 }
-
+// Add projects here
 const listOfProjects = [
 	{
 		name: "Weather app",
@@ -32,5 +33,11 @@ const listOfProjects = [
 			"It was built using React and standard JavaScript. ",
 		link: "https://github.com/randomprogramming/weather-app",
 		image: WeatherApp,
+	},
+	{
+		name: "Portfolio app",
+		description: "My own portfolio website built using React, the current website you are on.",
+		link: "https://github.com/randomprogramming/portfolio-app",
+		image: PortfolioApp,
 	},
 ];
