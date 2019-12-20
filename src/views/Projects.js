@@ -4,7 +4,6 @@ import "../css/Projects.css";
 import Project from "../components/Project";
 import WeatherApp from "../images/projects/weather-app.png";
 import PortfolioApp from "../images/projects/portfolio-app.png";
-import Test from "../images/projects/test.png";
 import GOL from "../images/projects/game-of-life.png";
 
 export default class Projects extends Component {

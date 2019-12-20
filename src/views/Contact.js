@@ -1,10 +1,41 @@
 import React, { Component } from "react";
 
+import "../css/Contact.css";
+import Send from "../images/send.png";
+
 export default class Contact extends Component {
+	onFormSubmit() {
+		console.log("submited");
+	}
 	render() {
 		return (
-			<div>
-				<h1>Contact</h1>
+			<div className="contact-main-container">
+				<form onSubmit={this.onFormSubmit} id="contact-form">
+					<div className="contact-form">
+						<div className="contact-form-email top-margin">
+							<label className="text-above-field" htmlFor="text-email">
+								Your email
+							</label>
+							<div className="text-email-container">
+								<input required type="text" id="text-email" className="text-field" />
+							</div>
+						</div>
+
+						<div className="contact-form-text top-margin">
+							<label className="text-above-field" htmlFor="text">
+								Text
+							</label>
+							<div className="text-container">
+								<textarea form="contact-form" id="text" className="text-field" />
+							</div>
+						</div>
+
+						<div className="form-submit-button-label top-margin">
+							<img src={Send} alt="Send" id="send-img" />
+							<input type="submit" value="tester" id="submit-button" />
+						</div>
+					</div>
+				</form>
 			</div>
 		);
 	}
