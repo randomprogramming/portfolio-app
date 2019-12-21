@@ -35,5 +35,5 @@ const first = {
 };
 const third = {
 	padding: "0em 1em",
-	marginLeft: "5em",
+	marginLeft: "20vw",
 };
