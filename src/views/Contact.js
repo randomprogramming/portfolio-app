@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 
 import "../css/Contact.css";
-import Send from "../images/send.png";
 
 export default class Contact extends Component {
 	onFormSubmit() {
@@ -30,8 +29,7 @@ export default class Contact extends Component {
 							</div>
 						</div>
 
-						<div className="form-submit-button-label top-margin">
-							<img src={Send} alt="Send" id="send-img" />
+						<div className="form-submit-button top-margin">
 							<input type="submit" value="tester" id="submit-button" />
 						</div>
 					</div>

@@ -14,8 +14,3 @@ body {
 	font-family: "Raleway Regular";
 	src: local("Raleway Regular"), url(./fonts/Raleway-Regular.ttf);
 }
-
-@font-face {
-	font-family: "Relaway Bold";
-	src: local("Raleway Bold"), url(./fonts/Raleway-Bold.ttf);
-}
