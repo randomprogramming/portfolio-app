@@ -16,7 +16,13 @@ export default class Contact extends Component {
 								Your email
 							</label>
 							<div className="text-email-container">
-								<input required type="text" id="text-email" className="text-field" />
+								<input
+									required
+									placeholder="Contact form not working right now."
+									type="text"
+									id="text-email"
+									className="text-field"
+								/>
 							</div>
 						</div>
 
@@ -30,7 +36,7 @@ export default class Contact extends Component {
 						</div>
 
 						<div className="form-submit-button top-margin">
-							<input type="submit" value="tester" id="submit-button" />
+							<input type="submit" value="send" id="submit-button" />
 						</div>
 					</div>
 				</form>
